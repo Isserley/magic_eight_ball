@@ -1,13 +1,14 @@
 class MagicEight
 	def get_question
     while true
-		puts "Ask me a question."
-		user_input = gets.chomp
-		answer
-    puts "wanna ask again?? yes / no"
-    again = gets.chomp.upcase
-    get_question if again == "YES"
-    puts "See you again."; break if again == "NO"
+  		puts "Ask me a question."
+  		user_input = gets.chomp
+      answer
+      puts "wanna ask again?? yes / no"
+      again = gets.chomp.upcase
+      get_question if again == "YES"
+      puts "See you again." if again == "NO"
+      break
     end
   end
 
